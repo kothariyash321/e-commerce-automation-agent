@@ -1,6 +1,6 @@
 # 🛒 E-Commerce AI Agent
 
-> An open-source, production-ready AI agent that automates multi-channel e-commerce operations — catalog health, inventory sync, analytics, chargeback reconciliation, and cross-department workflows — using Claude (Anthropic), Python, and MCP.
+> An open-source, production-ready AI agent that automates multi-channel e-commerce operations: catalog health, inventory sync, analytics, chargeback reconciliation, and cross-department workflows using Claude (Anthropic), Python, and MCP.
 
 ---
 
@@ -8,7 +8,7 @@
 
 This repo is a **complete, implementation-ready blueprint** for building an AI agent that can run the operational backbone of any multi-channel e-commerce distributor or retailer. It connects your ERP, your marketplace platforms, and your internal tools into a single intelligent system that monitors, fixes, reports, and alerts — automatically.
 
-Built to be handed directly to [Cursor](https://cursor.sh) or any AI-assisted IDE and built from scratch. Every section contains exact file paths, function signatures, data models, API endpoints, and environment variable names.
+Every section contains exact file paths, function signatures, data models, API endpoints, and environment variable names.
 
 ---
 
@@ -33,23 +33,23 @@ Built to be handed directly to [Cursor](https://cursor.sh) or any AI-assisted ID
 │           Orchestration Layer — Agent Core                  │
 │     Claude API · task decomposition · tool routing          │
 └──────────────┬───────────────────┬──────────────────────────┘
-               │                   │                   │
+               │                   │                  │
     ┌──────────▼──────┐  ┌─────────▼──────┐  ┌────────▼────────┐
     │ Marketplace     │  │ Analytics      │  │ Automation      │
     │ Tools           │  │ Tools          │  │ Tools           │
     │ Amazon · Walmart│  │ SQL · ERP      │  │ Power Automate  │
     │ Wayfair · HD    │  │ exports · BI   │  │ Python · APIs   │
     └──────────┬──────┘  └─────────┬──────┘  └────────┬────────┘
-               └──────────────┬────┘──────────────────┘
+               └──────────────-┬───┘──────────────-───┘
                     ┌──────────▼────────────────────────┐
-                    │  Shared Infrastructure             │
-                    │  MCP server · vector memory        │
-                    │  ERP connector · audit log         │
+                    │  Shared Infrastructure            │
+                    │  MCP server · vector memory       │
+                    │  ERP connector · audit log        │
                     └──────────┬────────────────────────┘
                                │
                     ┌──────────▼────────────────────────┐
-                    │  External Systems                  │
-                    │  Marketplace APIs · ERP · M365     │
+                    │  External Systems                 │
+                    │  Marketplace APIs · ERP · M365    │
                     └───────────────────────────────────┘
 ```
 
