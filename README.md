@@ -1315,52 +1315,8 @@ def test_catalog_health_prompt_calls_correct_tools():
 
 ---
 
-## 13. Build Order for Cursor
-
-Hand Cursor the relevant section number alongside this README for each sprint.
-
-### Sprint 1 — Foundation (Days 1–5)
-1. Set up repo structure exactly as shown in [Section 1](#1-repository-structure)
-2. Create `.env` from `.env.example`, fill in all credentials
-3. `pip install -r requirements.txt`
-4. Create Postgres DB, run Alembic migration with schema from [Section 9](#9-database-schema)
-5. Build `erp_client.py` ([Section 3](#3-erp-integration-vai-s2k)) and test against your ERP
-6. Build `erp_export.py` SFTP downloader as fallback
-7. Write unit tests for ERP client with mocked responses
-
-### Sprint 2 — Marketplace Tools (Days 6–15)
-1. Build `amazon_vc.py` and `amazon_sc.py` ([Section 4](#4-marketplace-tools))
-2. Build `walmart.py`
-3. Build `wayfair.py` (GraphQL client)
-4. Build `home_depot.py`, `lowes.py`, `bestbuy.py`
-5. Build `catalog_health.py` monitor
-6. Register all marketplace tools in `registry.py`
-
-### Sprint 3 — Analytics (Days 16–22)
-1. Build `sku_performance.py` with all metrics
-2. Build `channel_performance.py` with buyer code mapping
-3. Build `anomaly_detection.py`: slow movers and stockout risk
-4. Build `report_builder.py` with Excel output and SharePoint upload
-
-### Sprint 4 — Automation & Agent Core (Days 23–32)
-1. Build `chargeback.py` full workflow
-2. Build `po_alerts.py`
-3. Build `m365.py` and `notifications.py`
-4. Build agent `core.py` loop with full tool registry
-5. Add all prompts from [Section 11](#11-prompt-library)
-6. Set up scheduler with all jobs
-
-### Sprint 5 — MCP Server & QA (Days 33–40)
-1. Build MCP server (`src/mcp_server/server.py`)
-2. Configure Claude Desktop and test natural language invocation
-3. Write full test suite
-4. Document every function in `src/tools/` with docstrings covering: what it calls, what it returns, known edge cases
-
----
-
 ## 14. Pre-Build Checklist
 
-Before writing a line of code, resolve these:
 
 | # | Item | Who | Priority |
 |---|---|---|---|
